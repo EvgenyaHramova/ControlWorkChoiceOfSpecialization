@@ -27,7 +27,7 @@ void StringArray(string[] strArray)
     Console.WriteLine();
 }
 
-void NewStringArray(string[] strArray, int countSimbol)
+void NewStringArray(string[] strArray, int countSimbol) //данный метод представлен в алгоритме
 {
     string[] strArray1 = new string[strArray.Length];
     int j = 0;
@@ -72,11 +72,13 @@ void NewStringArray(string[] strArray, int countSimbol)
 
 Console.Write("Введите количество элементов в одномерном массиве:  ");
 int m = Convert.ToInt32(Console.ReadLine());
-string[] strArray = new string[m];
-StringArray(strArray);
-Console.Write("\nВведите предельное количество символов, которое может содержаться  в элементе нового массива:    ");
 
+string[] strArray = new string[m];
+StringArray(strArray);// создаем массив строк
+
+Console.Write("\nВведите предельное количество символов, которое может содержаться  в элементе нового массива:    ");
 int countSimbol = Convert.ToInt32(Console.ReadLine());
+
 int count = 0;
 for (int i = 0; i < strArray.Length; i++)
 {
